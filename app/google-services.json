@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "846954729173",
+    "project_id": "aranan-kan-bulundu",
+    "storage_bucket": "aranan-kan-bulundu.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:846954729173:android:292b5c2f1eb74c78205c5c",
+        "android_client_info": {
+          "package_name": "com.example.aranankanbulundu"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7h0M-7zuoYP_wG6DpbB911PMT1vw9Ick"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        tools:context=".ui.KanAraActivity">
+
+        <!-- Başlık -->
+        <TextView
+            android:id="@+id/textViewBaslik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kan Ara"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <!-- Ad -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutAd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintTop_toBottomOf="@id/textViewBaslik"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextAd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ad" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Soyad -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutSoyad"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintTop_toBottomOf="@id/textInputLayoutAd"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextSoyad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Soyad" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Kan Grubu -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutKanGrubu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintTop_toBottomOf="@id/textInputLayoutSoyad"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextKanGrubu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Kan Grubu" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Hastane -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutHastane"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintTop_toBottomOf="@id/textInputLayoutKanGrubu"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextHastane"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Hastane" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Poliklinik -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutPoliklinik"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintTop_toBottomOf="@id/textInputLayoutHastane"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextPoliklinik"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Poliklinik" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- İl -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutIl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintTop_toBottomOf="@id/textInputLayoutPoliklinik"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextIl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="İl" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- İlçe -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutIlce"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintTop_toBottomOf="@id/textInputLayoutIl"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextIlce"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="İlçe" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Telefon -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutTelefon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintTop_toBottomOf="@id/textInputLayoutIlce"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextTelefon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Telefon Numarası"
+                android:inputType="phone" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Kan Ara Butonu -->
+        <Button
+            android:id="@+id/buttonKanAra"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Kan Ara"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="48dp"
+            app:layout_constraintTop_toBottomOf="@id/textInputLayoutTelefon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
